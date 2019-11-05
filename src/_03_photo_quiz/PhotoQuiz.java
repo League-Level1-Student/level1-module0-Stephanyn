@@ -25,20 +25,25 @@ public class PhotoQuiz {
 
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
-		// “Copy Image Address”)
-
+		// â€œCopy Image Addressâ€�)
+		String snail = "https://i.pinimg.com/originals/76/ef/fc/76effc449bbe559f7f6f41b079d3edb1.jpg";
 		// 2. create a variable of type "Component" that will hold your image
-
+		Component image = createImage(snail);
 		// 3. use the "createImage()" method below to initialize your Component
-
+			
 		// 4. add the image to the quiz window
-
+			quizWindow.add(image);
 		// 5. call the pack() method on the quiz window
-
+			quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+			JLabel Q = new JLabel();
+			String REEEE = JOptionPane.showInputDialog("Where is the snail from?");
 		// 7. print "CORRECT" if the user gave the right answer
-
+				if (REEEE. equals("adventure time")) {
+					JOptionPane.showMessageDialog("CORRECT!");
+				}else {
+					JOptionPane.showMessageDialog("INCORRECT.");
+				}
 		// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the
