@@ -38,20 +38,31 @@ public class PhotoQuiz {
 		// 6. ask a question that relates to the image
 			JLabel Q = new JLabel();
 			String REEEE = JOptionPane.showInputDialog("Where is the snail from?");
+			
 		// 7. print "CORRECT" if the user gave the right answer
 				if (REEEE. equals("adventure time")) {
-					JOptionPane.showMessageDialog("CORRECT!");
+					JOptionPane.showMessageDialog(image, "CORRECT!");
 				}else {
-					JOptionPane.showMessageDialog("INCORRECT.");
+					JOptionPane.showMessageDialog(image, "INCORRECT.");
 				}
 		// 8. print "INCORRECT" if the answer is wrong
-
+				
 		// 9. remove the component from the quiz window (you may not see the
-		// effect of this until step 12)
-
+		// effect of this until step 1//
+				quizWindow.remove(image);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
+				String pig = "https://cdn140.picsart.com/265624933007211.png?r1024x1024";
+				Component pork = createImage(pig);
+				quizWindow.add(pork);
+				quizWindow.pack();
+				JLabel animal =  new JLabel();
+				String bacon = JOptionPane.showInputDialog("Where is this character from?");
+				if (bacon. equals("gravity falls")) {
+					JOptionPane.showMessageDialog(pork, "CORRECT!");
+				}else {
+					JOptionPane.showMessageDialog(pork, "INCORRECT.");
+				}
 		// 11. add the second image to the quiz window
 
 		// 12. pack the quiz window

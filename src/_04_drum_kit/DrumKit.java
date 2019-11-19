@@ -4,16 +4,11 @@ package _04_drum_kit;
  *    Level 1
  */
 
-import java.applet.AudioClip;
-import java.awt.GridLayout;
+import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.net.MalformedURLException;
-import java.net.URL;
 
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JApplet;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -25,21 +20,22 @@ public class DrumKit implements MouseListener {
 	public void run() throws MalformedURLException {
 
 		// 1. Make a JFrame variable and initialize it using "new JFrame()"
-
+		JFrame chirren = new JFrame();
 		// 2. Make the frame visible and
 		// set its default close operation to JFrame.EXIT_ON_CLOSE
-
+			chirren.setVisible(true);
+			chirren.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 3. Set the size of the frame
-
+			chirren.setPreferredSize(new Dimension(500,500));
 		// 4. Set the title of the frame
-
+			chirren.setTitle("Be careful");
 		// 5. Make a JPanel variable and initialize it using "new JPanel().
-
+			JPanel sodium = new JPanel();
 		// 6. Add the panel to the frame. (The panel is invisible.)
-
+			chirren.add(sodium);
 		// 7. Download an image of a drum from the Internet. Drop it into your
 		// Eclipse project under "default package".
-
+			
 		// 8. Put the name of your image file in a String variable.
 
 		// 9. Edit the next line to use your String variable
@@ -94,28 +90,7 @@ public class DrumKit implements MouseListener {
 		sound.play();
 	}
 
-	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void mouseEntered(MouseEvent e) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void mouseExited(MouseEvent e) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 }
